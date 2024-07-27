@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+  body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: right;
+  }
+  .content {
+        min-height: 100%;
+        padding-bottom: 120px;
+        box-sizing: border-box;
+    }
+    .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    .header-container, .totals-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .cliente, .factura-numero {
+        display: inline-block;
+    }
+    .resumen-total {
+        margin-top: 20px;
+    }
+    .resumen-total td {
+        text-align: right;
+    }
+    .resumen-total td:first-child {
+        text-align: left;
+    }
+    .totals-container .factura-numero p {
+        text-align: right;
+        margin-right: 0;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        background-color: rgb(39, 185, 88);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color:rgb(39, 185, 88);
+    margin: 20px 0;
+  }
+  .intro {
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+    padding: 10px; /* Añade un padding de 10px en todos los lados */
+    line-height: 1.6; /* Ajusta el interlineado para mejorar la legibilidad */
+    text-align: justify; /* Justifica el texto para una presentación uniforme */
+}
+.saludo {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.2em;
+    }
+
+    .firmas-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.firma p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.linea-firma {
+    border-top: 1px solid black; /* Usamos border-top en lugar de border-bottom */
+    height: 2px; /* Esto no cambia, solo es relevante si estás ajustando el estilo */
+    margin-bottom: 5px; /* Asegura un pequeño espacio entre la línea y el texto que sigue */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" style="max-width: 20%; height: auto;">
+    </div>
+
+    <div class="saludo">ACUERDO DE CESIÓN DE EQUIPOS </div>
+
+    <div class="intro">Por una parte, D/Dña _____________________ con DNI _______________ y domicilio en _______,    Actúa en adelante como cedente.<br>
+ 
+        Por otra parte la empresa con razón social Celver Tecnológico S.L con NIF B-56505340 y domicilio fiscal en la calle Alsasua 16 2ºIzquierda, Madrid 28023. Actúa en adelante como cesionario.<br> 
+        
+        Mediante el presente documento, se acuerda la cesión de los siguientes equipos.<br>
+    </div>
+
+<table>
+  <tr>
+    <th>Equipos</th>
+    <th>Unidades</th>
+    <th>Numeros de serie</th>
+  </tr>
+  <tr>
+    <td>Router Hughes</td>
+    <td>1</td>
+    <td>XXXXXXXXX</td>
+  </tr>
+  <tr>
+    <td>ODU/TRIA Hughes</td>
+    <td>1</td>
+    <td>XXXXXXXXX</td>
+  </tr>
+  <tr>
+    <td>Estructura antena y soportes</td>
+    <td>1</td>
+    <td>XXXXXXXXX</td>
+  </tr>
+  <tr>
+    <td>Cable Coaxial</td>
+    <td>1</td>
+    <td>XXXXXXXXX</td>
+  </tr>
+</table>
+
+<div class="intro">Los equipos se ceden al cesionario a cambio de la recogida de los mismos y el coste de desinstalación, que será repercutido al cesionario.<br>
+
+        1) El Cedente garantiza que los equipos se encuentran en perfecto estado y que se ha hecho previamente un perfecto uso de los mismos. En caso de apreciarse golpes, roturas o deformaciones en los equipos se podrá rescindir el acuerdo.<br>
+        El Cesionario no repercutirá al cliente ningún coste derivado de la actividad de desinstalación, ni por mano de obra ni por desplazamiento.<br>
+    
+    
+        2) Con la firma del presente contrato los equipos recogidos pasan a formar parte de la propiedad del cesionario.<br>
+    
+</div>
+
+<!-- Espacio para Firmas -->
+<div class="firmas-container">
+    <div class="firma">
+        <p>Firma del Cedente</p>
+        <div class="linea-firma"></div>
+    </div>
+    <div class="firma">
+        <img src="images/firma iago en foto.png" alt="Firma de Iago" style="max-width: 15%; height: auto;">
+        <p>Firma del Cesionario</p>
+        <div class="linea-firma"></div>
+    </div>    
+</div>
+
+<br>
+<img src="images/logos.png" class="full-width-image" alt="Logos">
+
+</div>
+</body>
+</html>
